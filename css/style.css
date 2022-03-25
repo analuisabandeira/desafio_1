@@ -1,0 +1,691 @@
+body {
+    
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+
+
+.banner{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    background: linear-gradient(rgb(74, 185, 185), rgb(72, 216, 168));
+}
+
+.banner h1 {
+
+    font-family: 'Hurricane', cursive;
+    align-self: center;
+    margin-top: 140px;
+    font-size: 100px;   
+}
+
+.banner a {
+
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.navbar .active { 
+
+    color: #494343;
+}
+
+.navbar a:hover {
+
+    color: #09434b;
+}
+
+main {    
+
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-kika {
+
+    width: 940px;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.about-kika-text {
+
+    width: 50%;
+    line-height: 20px; 
+    align-self: center;
+}
+
+.about-kika h2, .about-us h2, .section-contact h2 {
+
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.about-kika p { 
+
+    margin-bottom: 10px;
+}
+
+
+.about-kika-image {
+
+    width: 350px;
+    border-radius: 40px 10px;
+    box-shadow: 5px 5px 5px rgb(72, 216,168);
+}
+
+.about-us {
+
+   margin: 50px 0;
+   width: 940px;
+} 
+
+.main-recipes {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+}
+
+.main-recipes li {
+
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+}
+
+.main-card a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-card {
+    
+    box-sizing: border-box;
+}
+
+
+.main-card:hover {
+  
+   text-shadow: 0.5px 0.5px 0.5px rgb(13, 50, 50);
+}
+
+.cake-image-home {
+
+    margin: 10px;
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    max-width: 280px;
+}
+
+
+.section-contact {
+
+    width: 940px;
+}
+
+.contact-form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;    
+}
+
+.input-default {
+
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.input-default:focus {
+
+   outline-color: #217782
+   
+}
+
+.form-button {
+
+    height: 40px;
+    background: #158a99;
+    border-radius: 10px;
+    border-width: 0;
+    color: white;
+    font-size: 18px;
+    transition: 1s;
+
+}
+
+.form-button:active {
+
+    background: #02292e;
+}
+
+.section-form {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-image {
+
+    margin-left: 70px;
+    width: 400px;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.desserts {
+
+    width: 940px;
+    margin: 30px auto;
+    justify-content: center;
+    color: #000000;
+}
+
+.desserts h2 {
+
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #09434b;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.desserts h3, .about-us h3 {
+
+    font-size: 20px;
+    margin: 10px 0;
+    color: #09434b;
+}
+
+.desserts h4, .about-us h4 {
+
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #09434b;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 15px 0 ;
+}
+
+.icon-li p {
+
+    margin-bottom: 0;
+}
+
+.icon-li {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.icon-image {
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.recipe-1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.recipe-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.method-of-preparation {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cake-image {
+
+    border-radius: 10px;
+    height: 300px;
+    margin-left: 10px; 
+    max-width: 415px;
+}
+
+.ingredients-list ul, li p {
+
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.ingredients-list li h3 {
+
+    margin-bottom: 10px;
+}
+
+
+footer {
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(rgb(49, 134, 134), rgb(72, 216, 168));
+    height: 250px;
+    text-align: center;
+    color: rgb(58, 52, 52);
+    font-weight: bold;
+}
+
+footer p {
+
+    margin-bottom: 10px;
+}
+
+footer span {
+
+    font-size: 18px;
+    color: #0e656b;
+}
+
+@media(max-width:425px){
+
+    .banner {
+        justify-content: space-between;
+        height: auto;
+        align-items: center;
+    }
+
+    .banner h1 {
+        font-size: 60px;        
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    
+    .navbar {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 18px;
+        margin-bottom: 0;
+    }
+    
+    .navbar a {
+
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .about-us, .about-kika, .section-contact, .section-form, .desserts {
+       
+       width: 100%;
+       margin: 30px auto 0 auto;
+    }
+
+    .about-kika h2, .about-us h2, .section-contact h2 {
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .desserts {
+
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .desserts h2 {
+
+        font-size: 20px;
+        text-align: left;
+        width: 90%;
+        margin: 10px 5px;
+
+    }
+
+       .main-recipes {
+
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: space-around;
+    }
+
+    .main-recipes li {
+
+        width: 50%;
+        margin: 0;
+        min-width: 286px;
+    
+    }
+
+    .recipe-1 {
+
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .icons {
+
+        padding: 0 5px;
+    }
+
+    .cake-image {
+
+        width: 85%;
+        align-self: center;
+        margin-left: 0;
+        max-width: 344px;
+        max-height: 250px;
+    }
+
+    .method-of-preparation {
+
+        margin: 10px;
+    }
+
+    .cake-image-home {
+
+        max-height: 186px;
+        margin: 0 auto;
+    }
+
+    .desserts, .about-us h3 {
+
+        font-size: 16px;
+        margin-top: 10px;
+
+    }
+
+    .about-kika, .section-contact {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .about-kika-text {
+
+        width: 100%;
+
+    }
+
+    .about-kika-text p {
+
+        margin: 5px auto;
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    .about-kika-image {
+
+        max-width: 280px;
+    }
+
+    .section-form {
+
+        flex-wrap: wrap;
+        row-gap: 20px;
+        margin: 0 auto;
+    } 
+
+    .contact-form {
+
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .input-default, .form-button {
+
+        width: auto;
+        margin-top: 10px ;
+    }
+
+    .form-image {
+    
+       max-width: 300px;
+       margin: 0 auto;
+       align-self: center;
+    }
+
+    footer {
+
+        height: 170px;    
+    }
+
+    footer p {
+
+        margin-top: 0;
+        font-size: 12px;
+    }
+}
+
+@media(min-width:768px) and (max-width:769px) {
+
+    .banner {
+        justify-content: space-around;
+        height:250px;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .banner h1 {
+        font-size: 60px;        
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    
+    .navbar {
+        
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 18px;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    
+    .navbar a {
+
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    main {
+
+        box-sizing: border-box;
+    }
+
+    .about-us, .about-kika, .section-contact, .section-form, .desserts {
+       
+       width: 100%;
+       padding: 0 20px;
+       margin: 20px auto;
+       box-sizing: border-box;
+    }
+
+    .about-kika h2, .about-us h2, .section-contact h2 {
+
+        font-size: 20px;
+        margin: 10px;
+        padding: 0;
+
+    }
+
+    .main-recipes {
+
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .main-recipes li {
+
+        width: 50%;
+        margin: 0 auto;
+        min-width: 286px;
+    
+    }
+
+    
+
+    .desserts h2 {
+
+        font-size: 20px;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .icons {
+
+        padding: 0 5px;
+    }
+
+    .recipe-1 {
+
+        padding: 0 5px;
+    }
+
+    .cake-image {
+
+        align-self: flex-start;
+        height: auto;
+        margin-left: 20px;
+        width: 350px;
+        height: 252px;
+    }
+
+
+
+    .cake-image-home {
+
+        max-height: 186px;
+        margin: 0 auto;
+    }
+
+    .desserts, .about-us h3 {
+
+        font-size: 16px;
+        margin-top: 10px;
+
+    }
+
+    .about-kika, .section-contact {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .about-kika-text {
+
+        width: 100%;
+    }
+
+    .about-kika-text p {
+
+        margin: 5px auto;
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    .about-kika-image {
+
+        max-width: 280px;
+        margin-top: 30px;
+    }
+
+    .section-form {
+
+        flex-wrap: wrap;
+        row-gap: 20px;
+        margin: 0 auto;
+    } 
+
+    .contact-form {
+
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .input-default, .form-button {
+
+        width: auto;
+        margin-top: 10px ;
+    }
+
+    .input-default {
+
+        margin: 1px;
+    }
+
+    .form-image {
+    
+       max-width: 300px;
+       margin: 0 auto;
+       align-self: center;
+    }
+
+    footer {
+
+        height: 170px;    
+    }
+
+    footer p {
+
+        margin-top: 0;
+        font-size: 12px;
+    }
+}
