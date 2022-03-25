@@ -68,7 +68,8 @@ main {
 
 .about-kika {
 
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
     display: flex;
     justify-content: space-around;
     vertical-align: center;
@@ -106,7 +107,8 @@ main {
 .about-us {
 
    margin: 50px 0;
-   width: 940px;
+   width: 100%;
+   max-width: 940px;
 } 
 
 .main-recipes {
@@ -132,15 +134,18 @@ main {
     color: #000000;
 }
 
+
 .main-card {
-    
     box-sizing: border-box;
+    
+    transition: 0.2s ease;
 }
 
 
 .main-card:hover {
-  
    text-shadow: 0.5px 0.5px 0.5px rgb(13, 50, 50);
+
+   transform: translateY(-8px);
 }
 
 .cake-image-home {
@@ -155,7 +160,8 @@ main {
 
 .section-contact {
 
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
 }
 
 .contact-form {
@@ -189,6 +195,8 @@ main {
     font-size: 18px;
     transition: 1s;
 
+    cursor: pointer;
+
 }
 
 .form-button:active {
@@ -212,7 +220,8 @@ main {
 
 .desserts {
 
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
     margin: 30px auto;
     justify-content: center;
     color: #000000;
@@ -268,7 +277,6 @@ main {
 }
 
 .recipe-1 {
-
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -285,14 +293,22 @@ main {
 
     display: flex;
     flex-direction: column;
+
+    flex: 1;
+
 }
 
 .cake-image {
+    flex: 1;
 
     border-radius: 10px;
     height: 300px;
-    margin-left: 10px; 
+    margin-left: 10px;
+
+    width: 100%;
     max-width: 415px;
+
+    object-fit: cover;
 }
 
 .ingredients-list ul, li p {
@@ -506,7 +522,7 @@ footer span {
     }
 }
 
-@media(min-width:768px) and (max-width:769px) {
+@media(min-width:426px) and (max-width:769px) {
 
     .banner {
         justify-content: space-around;
