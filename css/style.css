@@ -394,10 +394,6 @@ footer a:hover {
     background: #f1f1f1;
 }
 
-
-
-
-
 @media(max-width:425px){
 
     .banner {
@@ -586,7 +582,7 @@ footer a:hover {
     .banner h1 {
         font-size: 60px;        
         text-align: center;
-        margin: 25px auto;
+        margin: 70px auto 25px auto;
     }
 
     
@@ -605,17 +601,19 @@ footer a:hover {
 
         font-size: 14px;
         text-transform: uppercase;
+        margin-right: 2px;
     }
 
     main {
 
         box-sizing: border-box;
+        padding: 0 15px 15px 15px;
     }
 
     .about-us, .about-kika, .section-contact, .section-form, .recipes {
        
        width: 100%;
-       padding: 0 20px;
+       padding: 0 10px;
        margin: 20px auto;
        box-sizing: border-box;
     }
@@ -627,7 +625,7 @@ footer a:hover {
         padding: 0;
 
     }
-
+   
     .main-recipes {
 
         width: 100%;
@@ -637,15 +635,12 @@ footer a:hover {
         margin-top: 30px;
     }
 
-    .main-recipes li {
+    .main-card {
 
         width: 50%;
         margin: 0 auto;
-        min-width: 286px;
-    
-    }
-
-    
+        min-width: 286px;    
+    }    
 
     .recipes h2 {
 
@@ -690,7 +685,6 @@ footer a:hover {
 
         flex-direction: column;
         align-items: center;
-        padding: 0 10px;
         box-sizing: border-box;
     }
 
@@ -731,12 +725,7 @@ footer a:hover {
         margin-top: 10px ;
     }
 
-    .input-default {
-
-        margin: 1px;
-    }
-
-    .form-image {
+   .form-image {
     
        max-width: 300px;
        margin: 0 auto;
