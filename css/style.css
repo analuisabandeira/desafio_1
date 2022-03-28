@@ -218,16 +218,22 @@ main {
     flex-grow: 1;
 }
 
-.desserts {
+.recipes {
 
     width: 100%;
     max-width: 940px;
-    margin: 30px auto;
+    margin: 30px auto 15px auto;
     justify-content: center;
     color: #000000;
+
 }
 
-.desserts h2 {
+.recipe-session {
+
+    margin-bottom: 20px;
+}
+
+.recipes h2 {
 
     font-size: 30px;
     margin-bottom: 10px;
@@ -236,14 +242,14 @@ main {
     padding-bottom: 10px;
 }
 
-.desserts h3, .about-us h3 {
+.recipes h3, .about-us h3 {
 
     font-size: 20px;
     margin: 10px 0;
     color: #09434b;
 }
 
-.desserts h4, .about-us h4 {
+.recipes h4, .about-us h4 {
 
     font-size: 17px;
     margin-bottom: 10px;
@@ -276,38 +282,43 @@ main {
     margin-right: 10px;
 }
 
-.recipe-1 {
+.recipe-session {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-}
-
-.recipe-2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    line-height: 20px;
 }
 
 .method-of-preparation {
 
     display: flex;
     flex-direction: column;
-
     flex: 1;
-
 }
 
-.cake-image {
-    flex: 1;
+.items-list li{
 
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    color:#089db0
+}
+
+.items-list span {
+
+    color: #000000;
+}
+
+.image-recipe {
+
+    flex: 1;
     border-radius: 10px;
     height: 300px;
     margin-left: 10px;
-
     width: 100%;
     max-width: 415px;
-
     object-fit: cover;
 }
 
@@ -325,7 +336,6 @@ main {
 
 footer {
 
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -346,6 +356,42 @@ footer span {
     font-size: 18px;
     color: #0e656b;
 }
+
+footer a {
+
+    text-decoration: none;
+    color: rgb(58, 52, 52);
+    transition: 0.5s;
+}
+
+footer a:hover {
+
+   color: rgb(2, 120, 128);
+   cursor: pointer;
+
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(74, 185, 185), rgb(72, 216, 168));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #077584;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+
+
 
 @media(max-width:425px){
 
@@ -376,7 +422,7 @@ footer span {
         text-transform: uppercase;
     }
 
-    .about-us, .about-kika, .section-contact, .section-form, .desserts {
+    .about-us, .about-kika, .section-contact, .section-form, .recipes {
        
        width: 100%;
        margin: 30px auto 0 auto;
@@ -388,13 +434,13 @@ footer span {
         text-align: center;
     }
 
-    .desserts {
+    .recipes {
 
         padding: 0 10px;
         box-sizing: border-box;
     }
 
-    .desserts h2 {
+    .recipes h2 {
 
         font-size: 20px;
         text-align: left;
@@ -419,7 +465,7 @@ footer span {
     
     }
 
-    .recipe-1 {
+    .recipe-session {
 
     width: 100%;
     flex-direction: column;
@@ -431,7 +477,7 @@ footer span {
         padding: 0 5px;
     }
 
-    .cake-image {
+    .image-recipe {
 
         width: 85%;
         align-self: center;
@@ -451,7 +497,7 @@ footer span {
         margin: 0 auto;
     }
 
-    .desserts, .about-us h3 {
+    .recipes, .about-us h3 {
 
         font-size: 16px;
         margin-top: 10px;
@@ -561,7 +607,7 @@ footer span {
         box-sizing: border-box;
     }
 
-    .about-us, .about-kika, .section-contact, .section-form, .desserts {
+    .about-us, .about-kika, .section-contact, .section-form, .recipes {
        
        width: 100%;
        padding: 0 20px;
@@ -596,7 +642,7 @@ footer span {
 
     
 
-    .desserts h2 {
+    .recipes h2 {
 
         font-size: 20px;
         text-align: left;
@@ -608,12 +654,12 @@ footer span {
         padding: 0 5px;
     }
 
-    .recipe-1 {
+    .recipe-session {
 
         padding: 0 5px;
     }
 
-    .cake-image {
+    .image-recipe {
 
         align-self: flex-start;
         height: auto;
@@ -630,7 +676,7 @@ footer span {
         margin: 0 auto;
     }
 
-    .desserts, .about-us h3 {
+    .recipes, .about-us h3 {
 
         font-size: 16px;
         margin-top: 10px;
