@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    height: 340px;
     background: linear-gradient(rgb(74, 185, 185), rgb(72, 216, 168));
 }
 
@@ -19,7 +19,7 @@ body {
 
     font-family: 'Hurricane', cursive;
     align-self: center;
-    margin-top: 140px;
+    margin-top: 120px;
     font-size: 100px;   
 }
 
