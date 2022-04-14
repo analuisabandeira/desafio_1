@@ -1,18 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:wght@100;300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Receitas da Vovó Kika</title>
 </head>
+
 <body>
+    <div id="overlay" class="close">
+ 
+    </div>
     <header class="banner">
+        <div class="container">
+            <input type="checkbox" id="checkbox-form">
+            <label for="checkbox-form" class="add-recipe">
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="div-new-recipe">
+            <div class="form-header">
+                <div class="form-title">
+                    <h2>Adicionar Nova Receita</h2>
+                </div>
+                <button class="close-form close">&times;</button>
+            </div>
+            <div class="form-body">
+                <form action="" id="form-new-recipe">
+                    <fieldset>
+                        <legend>Selecione a categoria da receita:</legend>
+                        <select name="" id="category" class="input-default">
+                            <option value="1">Datas Festivas</option>
+                            <option value="2">Bolos e Sobremesas</option>
+                            <option value="3">Tortas Salgadas</option>
+                            <option value="4">Receitinhas Saudáveis</option>
+                            <option value="5">Sopas e Caldos</option>
+                        </select>
+                    </fieldset>
+
+                    <label for="name">Nome da Receita:</label>
+                    <input type="text" id="name" class="input-default" >
+
+                    <label for="preparationTime">Tempo de Preparo:</label>
+                    <input type="text" id="preparationTime" class="input-default" >
+
+                    <label for="revenue">Rendimento:</label>
+                    <input type="text" id="revenue" class="input-default" >
+
+                    <label for="image">Foto da Receita:</label>
+                    <input type="file" id="image" class="input-file" >
+
+                    <label for="ingredients">Ingredientes:</label>
+
+                    <abbr title="" class="div-ingredients" id="div-ingredients">
+                        <input type="text" id="ingredients" class="input-default input-ingredients" >
+                        <button type="button" id="button-new-ingredient">Adicionar</button>
+                    </abbr>
+
+                    <label for="methodOfPreparation">Modo de Preparo:</label>
+                    <textarea name="" id="methodOfPreparation" cols=70" rows="5" class="input-default"></textarea>
+
+                    <button id="form-button" class="form-button" type="submit">Enviar Receita
+                    </button>
+                </form>
+
+            </div>
+        </div>
         <h1><a href="index.html">Receitas da Vovó Kika</a></h1>
         <nav class="navbar">
             <a href="datas_festivas.html">Datas Festivas</a>
@@ -22,8 +83,8 @@
             <a href="sopas.html">Sopas e Caldos</a>
         </nav>
     </header>
-   
-    <main>        
+
+    <main>
         <section class="about-us">
             <h2>Conheça as nossas principais receitas</h2>
             <ul class="main-recipes">
@@ -32,21 +93,21 @@
                     <a href="datas_festivas.html">
                         <img src="imagens/bolinho_de_chuva.png" alt="" class="image-recipe-home">
                         <h3>Bolinho de Chuva</h3>
-                        
+
                     </a>
                 </li>
                 <li class="main-card">
                     <a href="sobremesas.html">
                         <img src="imagens/bolo_de_chocolate.png" alt="" class="image-recipe-home">
                         <h3>Bolo de Chocolate</h3>
-                        
+
                     </a>
                 </li>
                 <li class="main-card">
                     <a href="sobremesas.html">
                         <img src="imagens/bolo_de_grude.png" alt="" class="image-recipe-home">
                         <h3>Bolo de Grude</h3>
-                        
+
                     </a>
                 </li>
                 <li class="main-card">
@@ -60,14 +121,14 @@
                     <a href="receitas_saudaveis.html">
                         <img src="imagens/bolachinha_de_aveia.png" alt="" class="image-recipe-home">
                         <h3>Biscoitinhos de Aveia</h3>
-                        
+
                     </a>
                 </li>
                 <li class="main-card">
                     <a href="sopas.html">
                         <img src="imagens/caldo verde.png" alt="" class="image-recipe-home">
                         <h3>Caldo Verde</h3>
-                       
+
                     </a>
                 </li>
             </ul>
@@ -76,9 +137,13 @@
         <section class="about-kika">
             <div class="about-kika-text">
                 <h2>Quem é Vovó Kika?</h2>
-                <p>Corina Bandeira, carinhosamente conhecida como "Vovó Kika", foi uma campinense arretada, esposa do saudoso Jaime Bandeira, mãe de nove filhos, mulher forte que desde cedo descobriu seu amor pela culinária e pelo artesanato.</p>
-                <p>Vovó Kika fez muitos cursos com o intuito de aprimorar o dom que lhe era nato: cozinhar. Nunca viveu desse trabalho, mas tinha muito prazer em cozinhar para os seus filhos e netos.</p>
-                <p>"Lember" a colher com que ela batia os bolos era motivo de grande disputa entre os mais de 15 netos! Mas no fim, todos se deliciavam com as gostosuras que a vovó preparava!</p>
+                <p>Corina Bandeira, carinhosamente conhecida como "Vovó Kika", foi uma campinense arretada, esposa do
+                    saudoso Jaime Bandeira, mãe de nove filhos, mulher forte que desde cedo descobriu seu amor pela
+                    culinária e pelo artesanato.</p>
+                <p>Vovó Kika fez muitos cursos com o intuito de aprimorar o dom que lhe era nato: cozinhar. Nunca viveu
+                    desse trabalho, mas tinha muito prazer em cozinhar para os seus filhos e netos.</p>
+                <p>"Lember" a colher com que ela batia os bolos era motivo de grande disputa entre os mais de 15 netos!
+                    Mas no fim, todos se deliciavam com as gostosuras que a vovó preparava!</p>
             </div>
             <img src="imagens/vovo.png" alt="Vovó Kika" class="about-kika-image">
         </section>
@@ -88,21 +153,28 @@
             <div class="section-form">
                 <form action="" class="contact-form">
                     <label for="name">Nome:</label>
-                    <input type="text" placeholder="Como você se chama?" id="name" class="input-default" required>
+                    <input type="text" placeholder="Como você se chama?" id="name" class="input-default">
                     <label for="email">E-mail:</label>
-                    <input type="email" placeholder="seuemail@dominio.com" id="email" class="input-default" required>
+                    <input type="email" placeholder="seuemail@dominio.com" id="email" class="input-default">
                     <label for="message">Mensagem:</label>
-                    <textarea name="" id="message" cols=70" rows="10" class= "input-default" required></textarea>
-                    <input type="submit" value="Enviar Sugestão" class="form-button">
+                    <textarea name="" id="message" cols=70" rows="10" class="input-default"></textarea>
+                    <input type="submit" value="Enviar Sugestão" id="form-button" class="form-button">
                 </form>
                 <img src="imagens/logo.png" alt="" class="form-image">
             </div>
         </section>
     </main>
     <footer>
-        
-        <p>Desenvolvido com muito <span>♥</span> por <a href="https://www.linkedin.com/in/analubandeira/" target="_blank" rel="external">Ana Luisa Bandeira</a>.</p>
+
+        <p>Desenvolvido com muito <span>♥</span> por <a href="https://www.linkedin.com/in/analubandeira/"
+                target="_blank" rel="external">Ana Luisa Bandeira</a>.</p>
         <p>&copy; Receitas da Vovó Kika - 2022</p>
     </footer>
+    <script src="js/database.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/validatesRecipe.js"></script>
+    <script src="js/setUpPage.js"></script>
+    <script src="js/get_recipe_from_form.js"></script>
 </body>
+
 </html>

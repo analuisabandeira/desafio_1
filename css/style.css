@@ -5,6 +5,186 @@ body {
     font-size: 15px;
 }
 
+.container {
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+#checkbox-form {
+    opacity: 0;
+    position: absolute;
+}
+
+.add-recipe {
+
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+
+.add-recipe span {
+
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius:30px;
+    background: #022c37;
+    transition: 0.25 ease-in-out;
+}
+
+.add-recipe span:nth-child(1){
+
+    top: 10px;
+}
+
+.add-recipe span:nth-child(2){
+
+    top: 10px;    
+    transform: rotate(90deg);
+}
+
+.div-new-recipe {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    transform: translate(-50%, -50%)  scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid #02292e;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 800px;
+    height: 90%;
+    max-width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  
+}
+
+.div-new-recipe.active {
+
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.form-header {
+
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #09434b;
+}
+
+.form-header .form-title {
+  
+    font-size: 1.5rem;
+}
+
+.form-header .close-form {
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+.form-header .close-form:hover {
+
+    color: #0b7d8c;
+}
+
+.form-body {
+
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#form-new-recipe {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.div-ingredients {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-ingredients {
+
+    flex: 1;
+}
+
+#button-new-ingredient {
+
+    height: 40px;
+    background: #158a99;
+    border-radius: 10px;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    max-width: 200px;
+    margin-left: 15px;
+}
+
+#button-new-recipe:hover {
+
+    background: #055863;
+}
+
+.input-file {
+
+    background: none;
+    outline: none;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+
+#overlay {
+
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #022c3778;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+
+    opacity: 1;
+    pointer-events: all;
+}
+
+
 .banner{
 
     width: 100%;
@@ -19,7 +199,6 @@ body {
 
     font-family: 'Hurricane', cursive;
     align-self: center;
-    margin-top: 110px;
     font-size: 100px;   
 }
 
@@ -545,7 +724,7 @@ footer a:hover {
         margin: 0 auto;
     }
 
-    .input-default, .form-button {
+    .input-default, #form-button {
 
         width: auto;
         margin-top: 10px ;
