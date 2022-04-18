@@ -5,8 +5,8 @@ const categories = [
         recipes: [
             {
                 name: "Bolachinhas de Aveia",
-                preparationTime: "45min",
-                revenue: "12 fatias",
+                preparationTime: "45",
+                revenue: "12",
                 image: "imagens/bolachinha_de_aveia.png",
                 ingredients:[
                     "1kg de goma fresca",
@@ -21,8 +21,8 @@ const categories = [
             },
             {
                 name: "Bolo de Chocolate Fofinho",
-                preparationTime: "45min",
-                revenue: "12 fatias",
+                preparationTime: "45",
+                revenue: "12",
                 image: "imagens/bolo_de_chocolate.png",
                 ingredients:[
                     "1kg de goma fresca",
@@ -73,8 +73,8 @@ const categories = [
         recipes: [
             {
                 name: "Pavê para o Vovô Comer",
-                preparationTime: "45min",
-                revenue: "12 fatias",
+                preparationTime: "45",
+                revenue: "12",
                 image: "imagens/pavê.png",
                 ingredients:[
                     "1kg de goma fresca",
@@ -95,8 +95,8 @@ const categories = [
         recipes: [
             {
                 name: "Torta de Legumes",
-                preparationTime: "45min",
-                revenue: "12 fatias",
+                preparationTime: "45",
+                revenue: "12",
                 image: "imagens/torta_de_legumes.png",
                 ingredients:[
                     "1kg de goma fresca",
@@ -117,8 +117,8 @@ const categories = [
         recipes: [
             {
                 name: "Crepioca",
-                preparationTime: "45min",
-                revenue: "12 fatias",
+                preparationTime: "45",
+                revenue: "12",
                 image: "imagens/crepioca.png",
                 ingredients:[
                     "1kg de goma fresca",
