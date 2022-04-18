@@ -215,6 +215,11 @@ body {
     transform: translateY(-8px);
 }
 
+.main-title { 
+
+    margin-top: 105px;
+}
+
 .navbar {
 
     display: flex;

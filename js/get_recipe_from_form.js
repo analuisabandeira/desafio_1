@@ -31,16 +31,19 @@ function getRecipesFromForm() {
 
     // Seleciona o formulário "New Recipe" direto do HTML
     const form = document.getElementById("form-new-recipe");
+    const image = form.image.value;
+    const imagePath = image.substring(12, image.length);
+    console.log(imagePath);
 
     const recipe = {
 
-        category: form.category.value,
+        categoryId: form.category.value,
         recipe: 
             {
                 name: form.name.value,
                 preparationTime: form.preparationTime.value,
                 revenue: form.revenue.value,
-                image: form.image.value,
+                image: `imagens/${imagePath}`,
                 ingredients: allIngredients,
                 methodOfPreparation: form.methodOfPreparation.value,
             }
@@ -77,13 +80,15 @@ function addRecipe(event) {
     const validRecipe = recipeForm.recipe;
 
     categories.map(el => {
-        
-        if (el.category === recipeForm.category) {
+     
+        if (el.categoryId === recipeForm.categoryId) {
             el.recipes.push(validRecipe);
         }        
     }) 
-    form.reset();
 
+    localStorage.setItem("categories", JSON.stringify(categories));
+
+    form.reset();
 }
 
 atribuirEventoEmUmElemento(buttonForm, addRecipe, "click");

@@ -1,5 +1,7 @@
 const url = window.location.href;
 
+const categoriesLoaded = localStorage.getItem("categories") ? JSON.parse(localStorage.getItem("categories")) : categories;
+
 let categorias = [];
 
 const categoriesTypes = {
@@ -18,7 +20,7 @@ categoriesKeys.forEach(el => {
 
     if (url.includes(el)) {
 
-        categorias = categories.filter(element => element.categoryId === categoriesTypes[el]);
+        categorias = categoriesLoaded.filter(element => element.categoryId === categoriesTypes[el]);
     }
 });
 
@@ -38,11 +40,11 @@ categorias.forEach(category => category.recipes.forEach(recipe => {
     recipeIcons.innerHTML = `    
         <li class="icon-li">
             <img src="imagens/clock.png" alt="clock icon" class="icon-image">
-            <p>${recipe.preparationTime}</p>
+            <p>${recipe.preparationTime}min</p>
         </li>
         <li class="icon-li">
             <img src="imagens/bowl.png" alt="bowl" class="icon-image">
-            <p>${recipe.revenue}</p>
+            <p>${recipe.revenue} fatias</p>
         </li>    
     `
 
@@ -105,12 +107,3 @@ categorias.forEach(category => category.recipes.forEach(recipe => {
     methodOfPreparationLi.appendChild(methodOfPreparationP);
     
 }));
-
-
-
-
-
-
-
-
-

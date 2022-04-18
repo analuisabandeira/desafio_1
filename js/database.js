@@ -4,10 +4,10 @@ const categories = [
         categoryId: "1",
         recipes: [
             {
-                name: "Bolo de Grude",
+                name: "Bolachinhas de Aveia",
                 preparationTime: "45min",
                 revenue: "12 fatias",
-                image: "imagens/bolo_de_grude.png",
+                image: "imagens/bolachinha_de_aveia.png",
                 ingredients:[
                     "1kg de goma fresca",
                     "1kg de açúcar",
@@ -72,10 +72,10 @@ const categories = [
         categoryId: "2",
         recipes: [
             {
-                name: "Bolo de Limão",
+                name: "Pavê para o Vovô Comer",
                 preparationTime: "45min",
                 revenue: "12 fatias",
-                image: "imagens/bolo_de_grude.png",
+                image: "imagens/pavê.png",
                 ingredients:[
                     "1kg de goma fresca",
                     "1kg de açúcar",
@@ -94,10 +94,10 @@ const categories = [
         categoryId: "3",
         recipes: [
             {
-                name: "Sopa de Grude",
+                name: "Torta de Legumes",
                 preparationTime: "45min",
                 revenue: "12 fatias",
-                image: "imagens/bolo_de_grude.png",
+                image: "imagens/torta_de_legumes.png",
                 ingredients:[
                     "1kg de goma fresca",
                     "1kg de açúcar",
@@ -116,10 +116,10 @@ const categories = [
         categoryId: "4",
         recipes: [
             {
-                name: "Bolo de Cenoura",
+                name: "Crepioca",
                 preparationTime: "45min",
                 revenue: "12 fatias",
-                image: "imagens/bolo_de_grude.png",
+                image: "imagens/crepioca.png",
                 ingredients:[
                     "1kg de goma fresca",
                     "1kg de açúcar",
@@ -138,10 +138,10 @@ const categories = [
         categoryId: "5",
         recipes: [
             {
-                name: "Bolo de Sopa",
-                preparationTime: "45min",
-                revenue: "12 fatias",
-                image: "imagens/bolo_de_grude.png",
+                name: "Sopa",
+                preparationTime: "45",
+                revenue: "12",
+                image: "imagens/sopa.png",
                 ingredients:[
                     "1kg de goma fresca",
                     "1kg de açúcar",
@@ -156,5 +156,3 @@ const categories = [
         ]
     }
 ]
-
-console.log(categories);
