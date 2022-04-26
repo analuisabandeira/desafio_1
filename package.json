@@ -1,0 +1,23 @@
+{
+  "name": "receitasdavovokika",
+  "version": "1.0.0",
+  "description": "Site de receitas",
+  "main": "./index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "lite-server --baseDir=dist",
+    "start": "concurrently \"npm run watch\" \"npm run server\"",
+    "compile": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "Ana Luisa Bandeira",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.182"
+  }
+}
