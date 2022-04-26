@@ -1,4 +1,4 @@
-// Função genérica que permite adicionar qualquer evento a um elemento; 
+// Função genérica que permite adicionar qualquer evento a um elemento;
 export function atribuirEventoEmUmElemento(elemento, funcao, evento) {
     elemento.addEventListener(evento, funcao);
 }

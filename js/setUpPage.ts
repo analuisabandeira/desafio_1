@@ -1,26 +1,30 @@
-import { categories, CategoryIdEnum, ICategory } from "./database.js";
+import { CategoryIdEnum, ICategory } from "../models/recipe.interface.js";
+import { categories } from "./database.js";
 
 const url = window.location.href;
 
-const categoriesLoaded:ICategory[] = localStorage.getItem("categories") ? JSON.parse(localStorage.getItem("categories")) : categories;
+const categoriesLoaded: ICategory[] = localStorage.getItem("categories")
+  ? JSON.parse(localStorage.getItem("categories"))
+  : categories;
 
-let categorias:ICategory[] = [];
+let categorias: ICategory[] = [];
 
 const categoriesKeys = Object.keys(CategoryIdEnum);
 
-const categoriesTypes = CategoryIdEnum as {[key:string]:string};
+const categoriesTypes = CategoryIdEnum as { [key: string]: string };
 
-categoriesKeys.forEach(el => {
-
-    if (url.includes(el)) {
-        categorias = categoriesLoaded.filter(element => element.categoryId === categoriesTypes[el]);
-    }
+categoriesKeys.forEach((el) => {
+  if (url.includes(el)) {
+    categorias = categoriesLoaded.filter(
+      (element) => element.categoryId === categoriesTypes[el]
+    );
+  }
 });
 
 const sectionRecipes = document.querySelector(".recipes");
 
-categorias.forEach(category => category.recipes.forEach (recipe => {
-
+categorias.forEach((category) =>
+  category.recipes.forEach((recipe) => {
     const divRecipe = document.createElement("div");
     divRecipe.classList.add("recipe");
 
@@ -39,7 +43,7 @@ categorias.forEach(category => category.recipes.forEach (recipe => {
             <img src="imagens/bowl.png" alt="bowl" class="icon-image">
             <p>${recipe.revenue} fatias</p>
         </li>    
-    `
+    `;
 
     const recipeSection = document.createElement("section");
     recipeSection.classList.add("recipe-session");
@@ -65,26 +69,24 @@ categorias.forEach(category => category.recipes.forEach (recipe => {
     const itemsList = document.createElement("ul");
     itemsList.classList.add("items-list");
 
-    recipe.ingredients?.forEach(element => {
+    recipe.ingredients?.forEach((element) => {
+      const ingredientLi = document.createElement("li");
 
-        const ingredientLi = document.createElement("li");
+      const ingredient = document.createElement("span");
+      ingredient.textContent = element;
 
-        const ingredient = document.createElement("span");
-        ingredient.textContent = element;
-
-        ingredientLi.appendChild(ingredient);
-        itemsList.appendChild(ingredientLi);
-    });    
+      ingredientLi.appendChild(ingredient);
+      itemsList.appendChild(ingredientLi);
+    });
 
     const methodOfPreparationLi = document.createElement("li");
 
     const methodOfPreparationTitle = document.createElement("h3");
-    methodOfPreparationTitle.textContent = "Modo de Preparo: "
+    methodOfPreparationTitle.textContent = "Modo de Preparo: ";
 
     const methodOfPreparationP = document.createElement("p");
     methodOfPreparationP.textContent = recipe.methodOfPreparation;
 
-    
     sectionRecipes.appendChild(divRecipe);
     divRecipe.appendChild(recipeTitle);
     divRecipe.appendChild(recipeIcons);
@@ -98,5 +100,5 @@ categorias.forEach(category => category.recipes.forEach (recipe => {
     ingredientsListUl.appendChild(methodOfPreparationLi);
     methodOfPreparationLi.appendChild(methodOfPreparationTitle);
     methodOfPreparationLi.appendChild(methodOfPreparationP);
-    
-}));
+  })
+);

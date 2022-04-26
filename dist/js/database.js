@@ -1,11 +1,4 @@
-export var CategoryIdEnum;
-(function (CategoryIdEnum) {
-    CategoryIdEnum["datas_festivas"] = "1";
-    CategoryIdEnum["sobremesas"] = "2";
-    CategoryIdEnum["tortas_salgadas"] = "3";
-    CategoryIdEnum["receitas_saudaveis"] = "4";
-    CategoryIdEnum["sopas"] = "5";
-})(CategoryIdEnum || (CategoryIdEnum = {}));
+import { CategoryIdEnum } from "../models/recipe.interface";
 export var categories = [
     {
         categoryId: CategoryIdEnum["datas_festivas"],
@@ -22,9 +15,9 @@ export var categories = [
                     "1 coco grande ralado",
                     "3 ovos",
                     "2cls de manteiga ou margarina derretida",
-                    "1 pitada de sal"
+                    "1 pitada de sal",
                 ],
-                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio"
+                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio",
             },
             {
                 name: "Bolo de Chocolate Fofinho",
@@ -38,11 +31,11 @@ export var categories = [
                     "1 coco grande ralado",
                     "3 ovos",
                     "2cls de manteiga ou margarina derretida",
-                    "1 pitada de sal"
+                    "1 pitada de sal",
                 ],
-                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio"
-            }
-        ]
+                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio",
+            },
+        ],
     },
     {
         categoryId: CategoryIdEnum["sobremesas"],
@@ -59,11 +52,11 @@ export var categories = [
                     "1 coco grande ralado",
                     "3 ovos",
                     "2cls de manteiga ou margarina derretida",
-                    "1 pitada de sal"
+                    "1 pitada de sal",
                 ],
-                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio"
+                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio",
             },
-        ]
+        ],
     },
     {
         categoryId: CategoryIdEnum["tortas_salgadas"],
@@ -80,11 +73,11 @@ export var categories = [
                     "1 coco grande ralado",
                     "3 ovos",
                     "2cls de manteiga ou margarina derretida",
-                    "1 pitada de sal"
+                    "1 pitada de sal",
                 ],
-                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio"
+                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio",
             },
-        ]
+        ],
     },
     {
         categoryId: CategoryIdEnum["receitas_saudaveis"],
@@ -101,11 +94,11 @@ export var categories = [
                     "1 coco grande ralado",
                     "3 ovos",
                     "2cls de manteiga ou margarina derretida",
-                    "1 pitada de sal"
+                    "1 pitada de sal",
                 ],
-                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio"
+                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio",
             },
-        ]
+        ],
     },
     {
         categoryId: CategoryIdEnum["sopas"],
@@ -122,10 +115,10 @@ export var categories = [
                     "1 coco grande ralado",
                     "3 ovos",
                     "2cls de manteiga ou margarina derretida",
-                    "1 pitada de sal"
+                    "1 pitada de sal",
                 ],
-                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio"
+                methodOfPreparation: " Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio",
             },
-        ]
-    }
+        ],
+    },
 ];

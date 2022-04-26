@@ -4,7 +4,7 @@ export function toValidatesRecipe(recipeForm) {
     if (recipeForm.recipe.name.length > 0) {
         var recipeExists = categories.some(function (category) {
             return category.recipes.some(function (recipe) {
-                return recipe.name.toLowerCase() === recipeForm.recipe.name.toLowerCase();
+                return (recipe.name.toLowerCase() === recipeForm.recipe.name.toLowerCase());
             });
         });
         return recipeExists;

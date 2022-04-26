@@ -33,13 +33,12 @@ function getRecipesFromForm() {
             image: "imagens/".concat(imagePath),
             ingredients: allIngredients,
             methodOfPreparation: form.methodOfPreparation.value,
-        }
+        },
     };
     return recipe;
 }
 function addRecipe(event) {
     var form = document.getElementById("form-new-recipe");
-    ;
     event.preventDefault();
     var recipeForm = getRecipesFromForm();
     checkRecipe(recipeForm);
