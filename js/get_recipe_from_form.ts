@@ -10,7 +10,7 @@ const buttonNewIngredient = document.getElementById("button-new-ingredient");
 const buttonForm = document.getElementById("form-button");
 
 //Prepara um array para receber todos os ingredientes que o usuário enviar, colocando cada um em uma posição no array.
-
+// OI
 const allIngredients: string[] = [];
 
 //Envia cada ingrediente para o array
